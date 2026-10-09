@@ -1,0 +1,643 @@
+{
+  "text-embedding-3-large": {
+    "provider_type": "OPENAI",
+    "dimensions": {
+      "default": 1536,
+      "range": [
+        1,
+        3072
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 8192
+  },
+  "text-embedding-3-small": {
+    "provider_type": "OPENAI",
+    "dimensions": {
+      "default": 1536,
+      "range": [
+        1,
+        1536
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 8192
+  },
+  "embed-v4.0": {
+    "provider_type": "COHERE",
+    "dimensions": {
+      "default": 1536,
+      "allowed": [
+        256,
+        512,
+        1024,
+        1536
+      ]
+    },
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_sequence_length": 128000
+  },
+  "embed-english-v3.0": {
+    "provider_type": "COHERE",
+    "dimensions": {
+      "default": 1024,
+      "allowed": [
+        1024
+      ]
+    },
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_sequence_length": 512
+  },
+  "embed-english-light-v3.0": {
+    "provider_type": "COHERE",
+    "dimensions": {
+      "default": 384,
+      "allowed": [
+        384
+      ]
+    },
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_sequence_length": 512
+  },
+  "embed-multilingual-v3.0": {
+    "provider_type": "COHERE",
+    "dimensions": {
+      "default": 1024,
+      "allowed": [
+        1024
+      ]
+    },
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_sequence_length": 512
+  },
+  "embed-multilingual-light-v3.0": {
+    "provider_type": "COHERE",
+    "dimensions": {
+      "default": 384,
+      "allowed": [
+        384
+      ]
+    },
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_sequence_length": 512
+  },
+  "jina-embeddings-v5-text-small": {
+    "provider_type": "JINA",
+    "dimensions": {
+      "default": 1024,
+      "range": [
+        1,
+        1024
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 32768
+  },
+  "jina-embeddings-v5-text-nano": {
+    "provider_type": "JINA",
+    "dimensions": {
+      "default": 768,
+      "range": [
+        1,
+        768
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 8192
+  },
+  "jina-embeddings-v5-omni-small": {
+    "provider_type": "JINA",
+    "dimensions": {
+      "default": 1024,
+      "range": [
+        1,
+        1024
+      ]
+    },
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE",
+      "AUDIO",
+      "VIDEO"
+    ],
+    "max_sequence_length": 32768
+  },
+  "jina-embeddings-v5-omni-nano": {
+    "provider_type": "JINA",
+    "dimensions": {
+      "default": 768,
+      "range": [
+        1,
+        768
+      ]
+    },
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE",
+      "AUDIO",
+      "VIDEO"
+    ],
+    "max_sequence_length": 8192
+  },
+  "jina-embeddings-v4": {
+    "provider_type": "JINA",
+    "dimensions": {
+      "default": 1536,
+      "range": [
+        1,
+        2048
+      ]
+    },
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_sequence_length": 32768
+  },
+  "jina-code-embeddings-1.5b": {
+    "provider_type": "JINA",
+    "dimensions": {
+      "default": 1536,
+      "range": [
+        1,
+        1536
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 32768
+  },
+  "jina-code-embeddings-0.5b": {
+    "provider_type": "JINA",
+    "dimensions": {
+      "default": 896,
+      "range": [
+        1,
+        896
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 32768
+  },
+  "jina-embeddings-v3": {
+    "provider_type": "JINA",
+    "dimensions": {
+      "default": 1024,
+      "range": [
+        1,
+        1024
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 8192
+  },
+  "jina-embeddings-v2-base-en": {
+    "provider_type": "JINA",
+    "dimensions": {
+      "default": 768,
+      "allowed": [
+        768
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 8192
+  },
+  "jina-embeddings-v2-base-es": {
+    "provider_type": "JINA",
+    "dimensions": {
+      "default": 768,
+      "allowed": [
+        768
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 8192
+  },
+  "jina-embeddings-v2-base-de": {
+    "provider_type": "JINA",
+    "dimensions": {
+      "default": 768,
+      "allowed": [
+        768
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 8192
+  },
+  "jina-embeddings-v2-base-zh": {
+    "provider_type": "JINA",
+    "dimensions": {
+      "default": 768,
+      "allowed": [
+        768
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 8192
+  },
+  "jina-embeddings-v2-base-code": {
+    "provider_type": "JINA",
+    "dimensions": {
+      "default": 768,
+      "allowed": [
+        768
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 8192
+  },
+  "jina-clip-v1": {
+    "provider_type": "JINA",
+    "dimensions": {
+      "default": 768,
+      "allowed": [
+        768
+      ]
+    },
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_sequence_length": 8192
+  },
+  "jina-clip-v2": {
+    "provider_type": "JINA",
+    "dimensions": {
+      "default": 1024,
+      "range": [
+        1,
+        1024
+      ]
+    },
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_sequence_length": 8192
+  },
+  "voyage-4-large": {
+    "provider_type": "VOYAGE",
+    "dimensions": {
+      "default": 1024,
+      "allowed": [
+        256,
+        512,
+        1024,
+        2048
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 32000
+  },
+  "voyage-4": {
+    "provider_type": "VOYAGE",
+    "dimensions": {
+      "default": 1024,
+      "allowed": [
+        256,
+        512,
+        1024,
+        2048
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 32000
+  },
+  "voyage-4-lite": {
+    "provider_type": "VOYAGE",
+    "dimensions": {
+      "default": 1024,
+      "allowed": [
+        256,
+        512,
+        1024,
+        2048
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 32000
+  },
+  "voyage-code-4": {
+    "provider_type": "VOYAGE",
+    "dimensions": {
+      "default": 1024,
+      "allowed": [
+        256,
+        512,
+        1024,
+        2048
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 32000
+  },
+  "voyage-code-3": {
+    "provider_type": "VOYAGE",
+    "dimensions": {
+      "default": 1024,
+      "allowed": [
+        256,
+        512,
+        1024,
+        2048
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 32000
+  },
+  "voyage-3-large": {
+    "provider_type": "VOYAGE",
+    "dimensions": {
+      "default": 1024,
+      "allowed": [
+        256,
+        512,
+        1024,
+        2048
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 32000
+  },
+  "voyage-3.5": {
+    "provider_type": "VOYAGE",
+    "dimensions": {
+      "default": 1024,
+      "allowed": [
+        256,
+        512,
+        1024,
+        2048
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 32000
+  },
+  "voyage-3.5-lite": {
+    "provider_type": "VOYAGE",
+    "dimensions": {
+      "default": 1024,
+      "allowed": [
+        256,
+        512,
+        1024,
+        2048
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 32000
+  },
+  "voyage-3": {
+    "provider_type": "VOYAGE",
+    "dimensions": {
+      "default": 1024,
+      "allowed": [
+        1024
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 32000
+  },
+  "voyage-3-lite": {
+    "provider_type": "VOYAGE",
+    "dimensions": {
+      "default": 512,
+      "allowed": [
+        512
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 32000
+  },
+  "voyage-finance-2": {
+    "provider_type": "VOYAGE",
+    "dimensions": {
+      "default": 1024,
+      "allowed": [
+        1024
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 32000
+  },
+  "voyage-law-2": {
+    "provider_type": "VOYAGE",
+    "dimensions": {
+      "default": 1024,
+      "allowed": [
+        1024
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 16000
+  },
+  "voyage-code-2": {
+    "provider_type": "VOYAGE",
+    "dimensions": {
+      "default": 1536,
+      "allowed": [
+        1536
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 16000
+  },
+  "voyage-multilingual-2": {
+    "provider_type": "VOYAGE",
+    "dimensions": {
+      "default": 1024,
+      "allowed": [
+        1024
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 32000
+  },
+  "text-embedding-v4": {
+    "provider_type": "DASHSCOPE",
+    "dimensions": {
+      "default": 1024,
+      "allowed": [
+        64,
+        128,
+        256,
+        512,
+        768,
+        1024,
+        1536,
+        2048
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 8192
+  },
+  "text-embedding-v3": {
+    "provider_type": "DASHSCOPE",
+    "dimensions": {
+      "default": 1024,
+      "allowed": [
+        512,
+        768,
+        1024
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 8192
+  },
+  "qwen3.7-text-embedding": {
+    "provider_type": "DASHSCOPE",
+    "dimensions": {
+      "default": 1024,
+      "allowed": [
+        256,
+        512,
+        768,
+        1024,
+        1536,
+        2048,
+        2560
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 131072
+  },
+  "tongyi-embedding-vision-plus": {
+    "provider_type": "DASHSCOPE",
+    "dimensions": {
+      "default": 1152,
+      "allowed": [
+        64,
+        128,
+        256,
+        512,
+        1024,
+        1152
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 1024
+  },
+  "tongyi-embedding-vision-flash": {
+    "provider_type": "DASHSCOPE",
+    "dimensions": {
+      "default": 768,
+      "allowed": [
+        64,
+        128,
+        256,
+        512,
+        768
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 1024
+  },
+  "qwen3-vl-embedding": {
+    "provider_type": "DASHSCOPE",
+    "dimensions": {
+      "default": 1536,
+      "allowed": [
+        256,
+        512,
+        768,
+        1024,
+        1536,
+        2048,
+        2560
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 32000
+  },
+  "multimodal-embedding-v1": {
+    "provider_type": "DASHSCOPE",
+    "dimensions": {
+      "default": 1024,
+      "allowed": [
+        1024
+      ]
+    },
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_sequence_length": 512
+  }
+}

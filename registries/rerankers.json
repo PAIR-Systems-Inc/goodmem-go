@@ -1,0 +1,143 @@
+{
+  "rerank-v4.0-pro": {
+    "provider_type": "COHERE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 32768
+  },
+  "rerank-v4.0-fast": {
+    "provider_type": "COHERE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 32768
+  },
+  "rerank-v3.5": {
+    "provider_type": "COHERE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 4096
+  },
+  "rerank-english-v3.0": {
+    "provider_type": "COHERE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 4096
+  },
+  "rerank-multilingual-v3.0": {
+    "provider_type": "COHERE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 4096
+  },
+  "jina-reranker-v3.5": {
+    "provider_type": "JINA",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 131072,
+    "description": "Domain-ready listwise reranker for multilingual and structured retrieval"
+  },
+  "jina-reranker-v3": {
+    "provider_type": "JINA",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 131072
+  },
+  "jina-reranker-v2-base-multilingual": {
+    "provider_type": "JINA",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 1024
+  },
+  "jina-reranker-v1-base-en": {
+    "provider_type": "JINA",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 8192
+  },
+  "jina-reranker-v1-turbo-en": {
+    "provider_type": "JINA",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 8192
+  },
+  "jina-reranker-v1-tiny-en": {
+    "provider_type": "JINA",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 8192
+  },
+  "rerank-2.5": {
+    "provider_type": "VOYAGE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 32000
+  },
+  "rerank-2.5-lite": {
+    "provider_type": "VOYAGE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 32000
+  },
+  "rerank-2": {
+    "provider_type": "VOYAGE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 16000
+  },
+  "rerank-2-lite": {
+    "provider_type": "VOYAGE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 8000
+  },
+  "rerank-1": {
+    "provider_type": "VOYAGE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 8000
+  },
+  "rerank-lite-1": {
+    "provider_type": "VOYAGE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 4000
+  },
+  "qwen3-vl-rerank": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 8000
+  },
+  "gte-rerank-v2": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 4000
+  },
+  "qwen3-rerank": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 30000
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "gpt-5.2": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 400000
+  },
+  "gpt-5.2-pro": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 400000
+  },
+  "gpt-5.1": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 400000
+  },
+  "gpt-5": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 400000
+  },
+  "gpt-5-mini": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 400000
+  },
+  "gpt-5-nano": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 400000
+  },
+  "o3": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 200000
+  },
+  "o3-mini": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 200000
+  },
+  "o4-mini": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 200000
+  },
+  "gpt-4.1": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 1047576
+  },
+  "gpt-4.1-mini": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 1047576
+  },
+  "gpt-4.1-nano": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 1047576
+  },
+  "gpt-4o": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE",
+      "AUDIO"
+    ],
+    "max_context_length": 128000
+  },
+  "gpt-4o-mini": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE",
+      "AUDIO"
+    ],
+    "max_context_length": 128000
+  },
+  "gpt-4-turbo": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 128000
+  },
+  "gpt-3.5-turbo": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 16385
+  },
+  "o1": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 200000
+  },
+  "qwen-max": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 32768
+  },
+  "qwen-plus": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 1000000
+  },
+  "qwen-turbo": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 131072
+  },
+  "qwen-long": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 10000000
+  },
+  "qwen3-max": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 262144
+  },
+  "qwen3-coder-plus": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 1000000
+  },
+  "qwen3.7-max": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 1000000
+  },
+  "qwen3.7-plus": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 1000000
+  },
+  "qwen3.7-flash": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 1000000
+  },
+  "qwen3.8-max": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 1000000
+  },
+  "qwen3.8-flash": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 1000000
+  },
+  "qwen3.6-flash": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 1000000
+  },
+  "qwen-vl-max": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 131072
+  },
+  "qwen-vl-plus": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 131072
+  },
+  "deepseek-v4-pro": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 1000000
+  },
+  "deepseek-v4-flash": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 1000000
+  },
+  "deepseek-v4.1-flash": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 1000000
+  },
+  "glm-5.2": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 1048576
+  },
+  "glm-5.3": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 1048576
+  },
+  "kimi-k2.6": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 262144
+  },
+  "kimi-k3": {
+    "provider_type": "DASHSCOPE",
+    "supported_modalities": [
+      "TEXT"
+    ],
+    "max_context_length": 1048576
+  },
+  "gpt-6-astra": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 1050000
+  },
+  "gpt-6-sol": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 1050000
+  },
+  "gpt-6-luna": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 1050000
+  },
+  "gpt-5.6-sol": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 1050000
+  },
+  "gpt-5.6-terra": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 1050000
+  },
+  "gpt-5.6-luna": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 1050000
+  },
+  "gpt-5.5": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 1050000
+  }
+}

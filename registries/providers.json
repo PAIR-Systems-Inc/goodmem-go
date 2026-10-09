@@ -1,0 +1,32 @@
+{
+  "OPENAI": {
+    "default_base_url": "https://api.openai.com/v1",
+    "base_urls_requiring_api_key": [
+      "https://api.openai.com/v1",
+      "https://generativelanguage.googleapis.com/v1beta/openai",
+      "https://api.anthropic.com/v1",
+      "https://api.mistral.ai/v1"
+    ]
+  },
+  "COHERE": {
+    "default_base_url": "https://api.cohere.com",
+    "base_urls_requiring_api_key": ["https://api.cohere.com"]
+  },
+  "VOYAGE": {
+    "default_base_url": "https://api.voyageai.com/v1",
+    "base_urls_requiring_api_key": ["https://api.voyageai.com/v1"]
+  },
+  "JINA": {
+    "default_base_url": "https://api.jina.ai",
+    "base_urls_requiring_api_key": ["https://api.jina.ai"]
+  },
+  "DASHSCOPE": {
+    "default_base_url": "https://dashscope.aliyuncs.com",
+    "base_urls_requiring_api_key": [
+      "https://dashscope.aliyuncs.com",
+      "https://dashscope-intl.aliyuncs.com",
+      "https://dashscope-us.aliyuncs.com",
+      "https://cn-hongkong.dashscope.aliyuncs.com"
+    ]
+  }
+}
