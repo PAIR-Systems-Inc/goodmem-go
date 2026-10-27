@@ -282,6 +282,14 @@
     ],
     "max_context_length": 1048576
   },
+  "gpt-6.1-sol": {
+    "provider_type": "OPENAI",
+    "supported_modalities": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "max_context_length": 1050000
+  },
   "gpt-6-astra": {
     "provider_type": "OPENAI",
     "supported_modalities": [

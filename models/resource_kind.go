@@ -14,6 +14,7 @@ const (
 	ResourceKindEMBEDDER                ResourceKind = "EMBEDDER"
 	ResourceKindRERANKER                ResourceKind = "RERANKER"
 	ResourceKindLLM                     ResourceKind = "LLM"
+	ResourceKindDECISIONMODEL           ResourceKind = "DECISION_MODEL"
 	ResourceKindMEMORY                  ResourceKind = "MEMORY"
 	ResourceKindEXTENSION               ResourceKind = "EXTENSION"
 	ResourceKindRETRIEVEMEMORYLOGPOLICY ResourceKind = "RETRIEVE_MEMORY_LOG_POLICY"

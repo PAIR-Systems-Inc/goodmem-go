@@ -23,6 +23,13 @@ import (
 	"github.com/PAIR-Systems-Inc/goodmem-go/models"
 )
 
+func must(t *testing.T, err error) {
+	t.Helper()
+	if err != nil {
+		t.Fatalf("unexpected error: %v", err)
+	}
+}
+
 func TestDocSdkExamples(t *testing.T) {
 	baseURL := os.Getenv("GOODMEM_BASE_URL")
 	apiKey := os.Getenv("GOODMEM_API_KEY")
@@ -63,13 +70,6 @@ func TestDocSdkExamples(t *testing.T) {
 			_ = client.Embedders().Delete(ctx, id)
 		}
 	})
-
-	must := func(t *testing.T, err error) {
-		t.Helper()
-		if err != nil {
-			t.Fatalf("unexpected error: %v", err)
-		}
-	}
 
 	t.Run("system.info", func(t *testing.T) {
 		// docs:begin sdk.system.info
@@ -1289,4 +1289,63 @@ func TestDocSdkExamples(t *testing.T) {
 		must(t, err)
 		// docs:end sdk.embedders.delete
 	})
+}
+
+func TestDecisionDocExamples(t *testing.T) {
+	baseURL, key := os.Getenv("GOODMEM_BASE_URL"), os.Getenv("GOODMEM_API_KEY")
+	if baseURL == "" || key == "" {
+		t.Skip("requires an explicitly configured GoodMem server")
+	}
+	client, err := goodmem.New(baseURL, key)
+	if err != nil {
+		t.Fatal(err)
+	}
+	ctx := context.Background()
+	// docs:begin sdk.decision_models.create
+	model, err := client.DecisionModels().Create(ctx, &models.CreateDecisionModelRequest{
+		DisplayName: "Doc decision model", ProviderType: models.DecisionModelProviderTypeLAYA,
+		EndpointURL: "http://localhost:8000", ModelIdentifier: "laya",
+	})
+	must(t, err)
+	log.Print(model.DecisionModelID)
+	// docs:end sdk.decision_models.create
+	ids := map[string]string{"decision_model": model.DecisionModelID}
+	defer func() {
+		// docs:begin sdk.decision_models.delete
+		err := client.DecisionModels().Delete(ctx, ids["decision_model"])
+		must(t, err)
+		// docs:end sdk.decision_models.delete
+	}()
+	// docs:begin sdk.decision_models.get
+	fetched, err := client.DecisionModels().Get(ctx, ids["decision_model"], nil)
+	must(t, err)
+	log.Print(fetched.DisplayName)
+	// docs:end sdk.decision_models.get
+	// docs:begin sdk.decision_models.list
+	page, err := client.DecisionModels().List(ctx, nil)
+	must(t, err)
+	log.Print(page.TotalCount, page.NextPageToken)
+	// docs:end sdk.decision_models.list
+	// docs:begin sdk.decision_models.update
+	name := "Updated decision model"
+	updated, err := client.DecisionModels().Update(ctx, ids["decision_model"], &models.UpdateDecisionModelRequest{DisplayName: &name})
+	must(t, err)
+	log.Print(updated.DisplayName)
+	// docs:end sdk.decision_models.update
+	ids["evaluation_model"] = os.Getenv("GOODMEM_DECISION_MODEL_EVAL_ID")
+	if ids["evaluation_model"] != "" {
+		// docs:begin sdk.decision_models.decide
+		text := "The account has been verified."
+		instructions := "Is the account verified?"
+		result, err := client.DecisionModels().Decide(ctx, ids["evaluation_model"], &models.DecisionRequest{
+			State: models.DecisionContent{Text: &text},
+			Questions: map[string]models.DecisionQuestion{"verified": {
+				Instructions: &models.DecisionContent{Text: &instructions},
+				Noul:         &models.DecisionNoulQuestion{},
+			}},
+		})
+		must(t, err)
+		log.Print(result.Answers["verified"].Noul.ProbabilityTrue)
+		// docs:end sdk.decision_models.decide
+	}
 }

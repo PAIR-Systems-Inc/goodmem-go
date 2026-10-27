@@ -10,4 +10,5 @@ const (
 	PingTargetTypeEMBEDDER              PingTargetType = "EMBEDDER"
 	PingTargetTypeRERANKER              PingTargetType = "RERANKER"
 	PingTargetTypeLLM                   PingTargetType = "LLM"
+	PingTargetTypeDECISIONMODEL         PingTargetType = "DECISION_MODEL"
 )

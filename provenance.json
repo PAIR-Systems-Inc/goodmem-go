@@ -1,58 +1,10 @@
 {
-  "source_module": "fury.io/pairsys/goodmem",
-  "source_version": "v0.1.9",
-  "source_archive_url": "https://go-proxy.fury.io/pairsys/fury.io/pairsys/goodmem/@v/v0.1.9.zip",
-  "source_archive_sha256": "2c12f3e77d3ac1ca3caf70e04011551fbc79c69b07789dd06ce0d33f3348df2c",
-  "source_info_url": "https://go-proxy.fury.io/pairsys/fury.io/pairsys/goodmem/@v/v0.1.9.info",
-  "source_info": {
-    "Version": "v0.1.9",
-    "Time": "2026-10-08T00:39:30.202Z"
-  },
+  "source_commit": "1cf25ae344200842b748f73a9c770ccaf0ea99be",
+  "source_directory": "clients/go",
   "module_path": "github.com/PAIR-Systems-Inc/goodmem-go",
+  "version": "v0.1.12",
   "transformations": [
-    "Rewrite the source module path in go.mod and Go files.",
-    "Replace the development README with standalone SDK documentation.",
-    "Omit the monorepo Gemfury publisher and internal e2e exerciser.",
-    "Add Apache-2.0 license text, provenance, and standalone CI."
-  ],
-  "module_path_rewritten_files": [
-    "client_test.go",
-    "doc_examples_integration_test.go",
-    "examples/basic_rag/main.go",
-    "gen_api_access_policy.go",
-    "gen_api_admin.go",
-    "gen_api_apikeys.go",
-    "gen_api_embedders.go",
-    "gen_api_instance.go",
-    "gen_api_llms.go",
-    "gen_api_memories.go",
-    "gen_api_ocr.go",
-    "gen_api_ping.go",
-    "gen_api_rerankers.go",
-    "gen_api_service_identities.go",
-    "gen_api_spaces.go",
-    "gen_api_system.go",
-    "gen_api_user_enrollments.go",
-    "gen_api_users.go",
-    "gen_convenience.go",
-    "go.mod",
-    "models/enforce_test.go",
-    "models/wire_test.go",
-    "retrieve.go",
-    "retrieve_test.go",
-    "timeout_budget_test.go",
-    "transforms_test.go",
-    "unknown_retrieval_status_test.go",
-    "uploads.go",
-    "uploads_test.go"
-  ],
-  "omitted_source_files": [
-    "README.md",
-    "exerciser/args.go",
-    "exerciser/args_test.go",
-    "exerciser/commands.go",
-    "exerciser/main.go",
-    "publish.sh"
-  ],
-  "license_policy_url": "https://goodmem.ai/resources/faq"
+    "Export SDK files only",
+    "Rewrite module path and Go self-imports"
+  ]
 }

@@ -12,7 +12,7 @@ retrieval for AI agents.
 Requires Go 1.23 or later:
 
 ```sh
-go get github.com/PAIR-Systems-Inc/goodmem-go@v0.1.9
+go get github.com/PAIR-Systems-Inc/goodmem-go@v0.1.12
 ```
 
 ```go
@@ -80,18 +80,11 @@ in this repository.
 
 ## Publication status and provenance
 
-This repository starts with the already-public Gemfury release **v0.1.9**. SDK
-sources, embedded registries, tests, and examples come from that published module;
-only its module path and self-references are rewritten for this repository.
-[provenance.json](provenance.json) records the public archive URL, SHA-256 digest,
-and transformations. No private repository history is imported.
-
-This initial snapshot is published as `v0.1.9` under the new module path. The
-existing GoodMem release pipeline still publishes subsequent releases to Gemfury;
-automatic updates to this repository are not configured yet. The planned pipeline
-migration will publish SDK snapshots here with immutable `vVERSION` tags. There is
-no separate Go package upload to GitHub Packages: the Git repository and its tags
-serve as the module source.
+Releases are exported and tested by GoodMem's release pipeline, then pushed
+here with immutable version tags. No private repository history is imported.
+[provenance.json](provenance.json) identifies the source commit and module path.
+New releases are published here only. Existing Gemfury users must change both
+their module requirement and imports to use this GitHub module.
 
 ## License
 
