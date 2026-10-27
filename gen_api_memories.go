@@ -71,6 +71,15 @@ func (s *MemoriesService) Content(ctx context.Context, id string) ([]byte, error
 	return s.client.doBytes(ctx, "GET", "/v1/memories/"+pathEscape(id)+"/content", nil)
 }
 
+// ContentWithHeaders Download memory content
+// Headers apply only to this call (for example Range, Accept-Encoding, If-Match).
+func (s *MemoriesService) ContentWithHeaders(ctx context.Context, id string, headers map[string]string) ([]byte, error) {
+	if id == "" {
+		return nil, fmt.Errorf("memories.content: id must not be empty")
+	}
+	return s.client.doBytesWithHeaders(ctx, "GET", "/v1/memories/"+pathEscape(id)+"/content", nil, headers)
+}
+
 // Create Create a new memory
 func (s *MemoriesService) Create(ctx context.Context, req *models.JSONMemoryCreationRequest) (*models.Memory, error) {
 	if req == nil {
@@ -290,6 +299,19 @@ func (s *MemoriesService) PagesImage(ctx context.Context, id string, pageIndex s
 	}
 	q := params.toQuery()
 	return s.client.doBytes(ctx, "GET", "/v1/memories/"+pathEscape(id)+"/pages/"+pathEscape(pageIndex)+"/image", q)
+}
+
+// PagesImageWithHeaders Download memory page image content
+// Headers apply only to this call (for example Range, Accept-Encoding, If-Match).
+func (s *MemoriesService) PagesImageWithHeaders(ctx context.Context, id string, pageIndex string, params *MemoriesPagesImageParams, headers map[string]string) ([]byte, error) {
+	if id == "" {
+		return nil, fmt.Errorf("memories.pages_image: id must not be empty")
+	}
+	if pageIndex == "" {
+		return nil, fmt.Errorf("memories.pages_image: pageIndex must not be empty")
+	}
+	q := params.toQuery()
+	return s.client.doBytesWithHeaders(ctx, "GET", "/v1/memories/"+pathEscape(id)+"/pages/"+pathEscape(pageIndex)+"/image", q, headers)
 }
 
 // MemoriesPagesImageParams holds the optional query parameters for MemoriesService.PagesImage.

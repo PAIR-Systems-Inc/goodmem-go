@@ -12,7 +12,7 @@ retrieval for AI agents.
 Requires Go 1.23 or later:
 
 ```sh
-go get github.com/PAIR-Systems-Inc/goodmem-go@v0.1.12
+go get github.com/PAIR-Systems-Inc/goodmem-go@v0.1.13
 ```
 
 ```go

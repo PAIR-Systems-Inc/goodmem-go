@@ -152,9 +152,17 @@ func (c *Client) openStream(ctx context.Context, method, path string, body any, 
 // doBytes executes a request and returns the raw response body — used by
 // binary-returning endpoints (memories.content, memories.pages_image).
 func (c *Client) doBytes(ctx context.Context, method, path string, query url.Values) ([]byte, error) {
+	return c.doBytesWithHeaders(ctx, method, path, query, nil)
+}
+
+// doBytesWithHeaders applies download headers to this request only.
+func (c *Client) doBytesWithHeaders(ctx context.Context, method, path string, query url.Values, headers map[string]string) ([]byte, error) {
 	req, err := c.newRequest(ctx, method, path, query, nil)
 	if err != nil {
 		return nil, err
+	}
+	for name, value := range headers {
+		req.Header.Set(name, value)
 	}
 	resp, err := c.httpClient.Do(req)
 	if err != nil {
