@@ -2,8 +2,8 @@
 //
 // Snippet markers are synced into docs/website/content/docs/how-to/basic-rag.mdx
 // by clients/_docs_gen/sync_rag_snippets.py, which rewrites the in-repo import
-// path to the published Gemfury path (fury.io/pairsys/goodmem), mirroring
-// clients/go/publish.sh.
+// path to the published GitHub path (github.com/PAIR-Systems-Inc/goodmem-go), mirroring
+// clients/ci/go_release_snapshot.py.
 // [snippet:setup]
 package main
 
