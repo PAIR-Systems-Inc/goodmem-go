@@ -2,7 +2,7 @@
 
 package models
 
-// PostProcessor — Post-processor configuration for transforming retrieval results. Custom processors are discovered from installed extensions and must be referenced by their fully qualified factory class name. See https://docs.goodmem.ai/docs/reference/post-processors/chat-post-processor/ for the built-in ChatPostProcessor configuration.
+// PostProcessor — Post-processor configuration for transforming retrieval results. Custom processors are discovered from installed extensions and must be referenced by their fully qualified factory class name. The built-in ChatPostProcessorFactory is resolved directly without loading installed extension JARs. When executable extensions are disabled at server startup, only the built-in ChatPostProcessorFactory is available; custom processors are rejected with HTTP 412 before streaming starts. See [ChatPostProcessor reference](https://docs.goodmem.ai/docs/reference/post-processors/chat-post-processor/) for the built-in ChatPostProcessor configuration.
 type PostProcessor struct {
 	// Name — Fully qualified factory class name of the post-processor to apply.
 	Name string `json:"name"`

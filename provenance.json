@@ -1,8 +1,8 @@
 {
-  "source_commit": "f8d68078459341d86496c44030e516bca41982e3",
+  "source_commit": "0a610ac37332e301a9f1a490b0f17df1fa7da80a",
   "source_directory": "clients/go",
   "module_path": "github.com/PAIR-Systems-Inc/goodmem-go",
-  "version": "v0.1.14",
+  "version": "v0.1.15",
   "transformations": [
     "Export SDK files only",
     "Rewrite module path and Go self-imports"
